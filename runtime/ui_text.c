@@ -155,6 +155,15 @@ static const char *const text_en[UI_TEXT_COUNT] = {
     [UI_MENU_AA_DESC] = "The game's own anti-aliasing, SMAA, for when no upscaler runs. Off leaves the edges jagged.",
     [UI_MENU_AA_OFF] = "Off",
     [UI_MENU_AA_BY_UPSCALER] = "the upscaler smooths the edges",
+    [UI_MENU_FRAMEGEN] = "Frame generation",
+    [UI_MENU_FRAMEGEN_DESC] = "NVIDIA DLSS Frame Generation: frames made between the game's own, for a smoother "
+                              "picture; the game itself keeps its frame rate. 2x shows one frame between two of the "
+                              "game's, 3x and 4x two and three (RTX 50 series). Automatic fills the display's refresh "
+                              "rate. Needs an NVIDIA RTX 40 or newer GPU, the DLSS SDK's frame generation library next to "
+                              "the game and an upscaler running; adds about half a frame of latency. Not with HDR output "
+                              "yet. Turning it on takes effect after a restart, then at once.",
+    [UI_MENU_FRAMEGEN_NEEDS_TAA] = "needs an upscaler",
+    [UI_MENU_FRAMEGEN_NO_HDR] = "not with HDR output yet",
     [UI_MENU_OUTPUT_RES_AUTO] = "Automatic",
     [UI_MENU_OUTPUT_RES_NEXT] = ", %s after restart",
 
@@ -623,6 +632,15 @@ static const char *const text_ru[UI_TEXT_COUNT] = {
                         "зубчатыми.",
     [UI_MENU_AA_OFF] = "Выкл.",
     [UI_MENU_AA_BY_UPSCALER] = "края сглаживает апскейлер",
+    [UI_MENU_FRAMEGEN] = "Генерация кадров",
+    [UI_MENU_FRAMEGEN_DESC] = "NVIDIA DLSS Frame Generation: кадры между кадрами игры, для более плавной картинки; сама "
+                              "игра сохраняет свою частоту кадров. 2x показывает один кадр между двумя кадрами игры, 3x "
+                              "и 4x — два и три (серия RTX 50). «Автоматически» заполняет частоту обновления экрана. "
+                              "Нужны видеокарта NVIDIA RTX 40 или новее, библиотека генерации кадров из DLSS SDK рядом с "
+                              "игрой и работающий апскейлер; добавляет около половины кадра задержки. Пока не работает "
+                              "с HDR. Включение действует после перезапуска, затем сразу.",
+    [UI_MENU_FRAMEGEN_NEEDS_TAA] = "нужен апскейлер",
+    [UI_MENU_FRAMEGEN_NO_HDR] = "пока не с HDR",
     [UI_MENU_OUTPUT_RES_AUTO] = "Автоматически",
     [UI_MENU_OUTPUT_RES_NEXT] = ", %s после перезапуска",
 
@@ -1428,6 +1446,15 @@ static const char *const text_pt_br[UI_TEXT_COUNT] = {
                         "bordas serrilhadas.",
     [UI_MENU_AA_OFF] = "Desligado",
     [UI_MENU_AA_BY_UPSCALER] = "o upscaler suaviza as bordas",
+    [UI_MENU_FRAMEGEN] = "Geração de quadros",
+    [UI_MENU_FRAMEGEN_DESC] = "NVIDIA DLSS Frame Generation: quadros criados entre os do jogo, para uma imagem mais fluida; "
+                              "o próprio jogo mantém sua taxa de quadros. 2x mostra um quadro entre dois do jogo, 3x e 4x "
+                              "dois e três (série RTX 50). Automático preenche a taxa de atualização da tela. Requer uma "
+                              "GPU NVIDIA RTX 40 ou mais nova, a biblioteca de geração de quadros do DLSS SDK ao lado do "
+                              "jogo e um upscaler ativo; adiciona cerca de meio quadro de latência. Ainda não funciona com "
+                              "HDR. Ligar vale após reiniciar, depois na hora.",
+    [UI_MENU_FRAMEGEN_NEEDS_TAA] = "requer um upscaler",
+    [UI_MENU_FRAMEGEN_NO_HDR] = "ainda não com HDR",
     [UI_MENU_OUTPUT_RES_AUTO] = "Automático",
     [UI_MENU_OUTPUT_RES_NEXT] = ", %s após reiniciar",
     [UI_MENU_TAB_CHEATS] = "Cheats",
@@ -2022,6 +2049,13 @@ static const char *const text_zh_hans[UI_TEXT_COUNT] = {
     [UI_MENU_AA_DESC] = "游戏自带的抗锯齿 SMAA，用于未运行超分辨率时。关闭会使边缘出现锯齿。",
     [UI_MENU_AA_OFF] = "关闭",
     [UI_MENU_AA_BY_UPSCALER] = "边缘由超分辨率平滑",
+    [UI_MENU_FRAMEGEN] = "帧生成",
+    [UI_MENU_FRAMEGEN_DESC] = "NVIDIA DLSS 帧生成：在游戏的帧之间生成新帧，使画面更流畅；游戏本身保持原有帧率。2x 在游戏的两帧之间"
+                              "显示一帧，3x 和 4x 显示两帧和三帧（RTX 50 系列）。自动会填满显示器的刷新率。需要 NVIDIA RTX 40 或"
+                              "更新的显卡、放在游戏旁边的 DLSS SDK 帧生成库，以及正在运行的超分辨率；会增加约半帧的延迟。暂不支持 "
+                              "HDR 输出。开启后需重启生效，之后即时生效。",
+    [UI_MENU_FRAMEGEN_NEEDS_TAA] = "需要超分辨率",
+    [UI_MENU_FRAMEGEN_NO_HDR] = "暂不支持 HDR",
     [UI_MENU_OUTPUT_RES_AUTO] = "自动",
     [UI_MENU_OUTPUT_RES_NEXT] = "，重启后为 %s",
     [UI_MENU_TAB_CHEATS] = "金手指",
